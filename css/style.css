@@ -1,0 +1,140 @@
+
+.topnav{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.topnav .links{
+    background-color: rgb(224, 225, 226);
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid lightslategray;
+    border-top: 1px solid lightslategray;
+  
+
+}
+
+
+.topnav .links a{
+    color: black;
+    text-decoration: none;
+    padding: 0 20px 0 20px;
+    font-size: 20px;
+    font-family: cursive;
+  
+}
+
+li{
+    list-style: none;
+    display: inline;
+    border-left: 10px black;
+
+}
+.topnav i{
+    margin-right: 10px;
+}
+
+.topnav .search{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    
+
+}
+.topnav .search{
+  padding-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row-reverse;
+    justify-content: space-around;
+
+}
+
+.topnav .search .logo{
+font-size: 40px;
+color: brown;
+}
+.topnav .search button{
+    width: 60%;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    
+}
+.topnav .search i{
+    font-size: 30px;
+
+
+
+}
+
+
+/* start footer */
+.footer_container1{
+    background-color: rgb(37, 37, 37);
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+   justify-content: space-around;
+   flex-flow: row-reverse;
+   text-align: right;
+   padding-bottom: 50px;
+}
+/*  */
+.footer_container1 a{
+    color: rgb(190, 190, 190);
+    text-decoration: none;
+
+}
+.footer_container1 a:active{
+    color: blue;
+
+}
+.footer_container1 .col1 .subscribe form{
+    background-color: rgb(107, 107, 106);
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 200px;
+}
+.footer_container1 .col1 .social-media{
+    font-size: 35px;
+    color:lightblue;
+}
+form input{
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+
+}
+form button{
+   font-size: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    width: 40%;
+
+}
+.footer_container2{
+    background-color: rgb(224, 225, 226);
+    margin-top: -20px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row-reverse;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+
+
+
+   
+/* end footer */
+
+
