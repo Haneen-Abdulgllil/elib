@@ -14,12 +14,12 @@
                 <ul>
                         <li class="vertical_line"> <i class="fa  fa-home" id="icon"></i><a href="#">English</a></li> 
 
-                        <li class="vertical_line"> <a href="#">  <i class="fa fa-user" id="icon"></i>ادخل لحسابك او سجل الان</a></li> 
+                        <li class="vertical_line"> <a href="#" id="show-btnn"> ادخل لحسابك او سجل الان<i class="fa fa-user" id="icon"></i></a></li> 
 
                         <li class="vertical_line"> <a href="#"><i class="fa  fa-Home" id="icon"></i>الريئسية</a></li> 
 
                         <li class="vertical_line"> <a href="#"><i class="fa  fa-address-card" id="icon"></i>من نحن</a></li> 
-                      
+                    
                         <li class="vertical_line"> <a href="#"><i class="fa  fa-phone" id="icon"></i>اتصل بنا</a></li> 
 
                         <li class="vertical_line"><a href="#"><i class="fa  fa-info" id="icon"></i>المساعدة</a>  </li> 
@@ -28,12 +28,12 @@
 
                         <li class="vertical_line"><a href="#"><i class="fa  fa-car" id="icon"></i>اليمن</a> </li>
                             
-                 </ul>
+                </ul>
 
         </div>
         <div class="search">
             <div class="logo">
-                   <a href=""><img src="img/logo.png" alt=""></a>
+                <a href=""><img src="img/logo.png" alt=""></a>
             </div>
         
             <button><i class="fa  fa-search" id="icon"></i>البحث</button>
@@ -46,41 +46,533 @@
 
 <!-- start slider -->
 
-<div class="slides">
-        <div class="slidesContainer">
-          <div class="slide"><img src="img/3.jpg" alt=""></div>
-          <div class="slide"><img src="img/4.jpg" alt=""></div>
-          <div class="slide"><img src="img/7.jpg" alt=""></div>
-          <div class="slide"><img src="img/8.jpg" alt=""></div>
-        </div>
- </div>
-      
+<section id="slider">
+    <div class="slideshow-container">
+            <div class="mySlides fade">
+                    <img src="img/slid3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                    <img src="img/slid4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                    <img src="img/slid5.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                    <img src="img/slid1.webp" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                    <img src="img/slid2.webp" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                    <img src="img/slid3.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+            <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>  
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+    </div>
+</section>
+
 
 <!-- end slider -->
 
+<!-- start pop up -->
 
-  <footer>
+<div class="container" id="model-container">
+        
+    <form action=" " id="form">
+        <h4>تسجيل الدخول</h4>
+        <div class="input-control">
+            <input id="email" name="email" type="text" placeholder="البريد الالكترون او رقم الجوال">
+    
+        </div>
+        <div class="input-control">
+            <input id="password"name="password" type="password" placeholder="كلمة المرور" >
+            <span><a href="">نسيت؟</a></span>
+    
+        </div>
+        <button type="submit">تسجيل الدخول</button>
+        <p>ليس لديك حساب</p>
+        <button type="submit" class="log-in" id="signup">انشاء حساب جديد</button>
+
+    </form>
+</div>
+
+<div class="container" id="model-container2">
+        
+        <form action=" " id="form">
+            <h4>انشاء حساب</h4>
+
+            <div class="input-control">
+                    <input id="phone" name="phone" type="text" placeholder="رقم الجوال">
+                    <div class="error"></div>
+                    <p>سوف نرسل لك رمز التحقق عن طريق رسالة نصية</p>
+            </div>
+
+            <input type="button" placeholder="ارسال رمز التحقق">
+
+            <div class="input-control">
+                    <input id="username" name="username" type="text" placeholder="الاسم الاول">
+            
+                </div>
+
+                <div class="input-control">
+                        <input id="username" name="username" type="text" placeholder="اسم العائلة">
+                
+                </div>
+
+                <div class="input-control">
+                            <input id="email" name="email" type="text" placeholder="البريد الالكتروني"> 
+                    
+                </div> 
+
+                <div class="input-control">
+                            <input id="email" name="email" type="text" placeholder="تأكيد البريد الالكتروني">
+                    
+                </div>
+                <div class="input-control">
+                        <input id="password"name="password" type="password" placeholder="كلمة المرور">
+                
+                </div>
+                <div class="checkbox">
+                        <input type="checkbox" id="accept">
+                        <label> اوافق على الشروط والاحكام</label>
+
+                </div>
+                <div class="checkbox">
+                    
+                <input type="checkbox" id="reg" >
+                <label> التسجيل للانضمام للنشرة الجوية</label>
+            
+
+                </div>
+
+            <input type="button" placeholder="انشاء حساب" >
+            <p>
+                لديك حساب؟ <a href="#" id="sign-in" >تسجيل الدخول</a>
+            </p>
+    
+        </form>
+    </div>
+
+
+<!-- end pop up -->
+
+<!-- start explore -->
+
+<div class="exlpore_container">
+    <h2>العروض الحالية</h2>
+    <div class="explore_content">
+        <div class="explore_card">
+            <div class="icon">
+                    <a href=""> <i class="fa fa-cart-plus" id="i1"></i></a>
+            </div>
+            <h3>
+                دين
+            </h3>
+        </div>
+        <div class="explore_card">
+                <div class="icon">
+                        <a href=""> <i class="fa fa-cart-plus" id="i2"></i></a>
+                </div>
+                <h3>
+                    تاريخ
+                </h3>
+            </div>
+        <div class="explore_card">
+                    <div class="icon">
+                            <a href=""> <i class="fa fa-cart-plus" id="i3"></i></a>
+                    </div>
+                    <h3>
+                        فلسفة
+                    </h3>
+        </div>
+        <div class="explore_card">
+                        <div class="icon">
+                                <a href=""> <i class="fa fa-cart-plus" id="i4"></i></a>
+                        </div>
+                        <h3>
+                            روايات
+                        </h3>
+        </div>
+        <div class="explore_card">
+                            <div class="icon">
+                                    <a href=""> <i class="fa fa-cart-plus" id="i5"></i></a>
+                            </div>
+                            <h3>
+                                سياسة
+                            </h3>
+        </div>
+        <div class="explore_card">
+                <div class="icon">
+                        <a href=""> <i class="fa fa-cart-plus" id="i6"></i></a>
+                </div>
+                <h3>
+                    طبخ
+                </h3>
+        </div>
+        <div class="explore_card">
+                <div class="icon">
+                        <a href=""> <i class="fa fa-cart-plus" id="i7"></i></a>
+                </div>
+                <h3>
+                    اقتصاد
+                </h3>
+        </div>
+        <div class="explore_card">
+                <div class="icon">
+                        <a href=""> <i class="fa fa-cart-plus" id="i8"></i></a>
+                </div>
+                <h3>
+                    تربية
+                </h3>
+        </div>
+        
+
+    </div>
+</div>
+
+
+<!-- end explore -->
+<!-- start orders -->
+
+    <!-- first row -->
+
+<div class="order_container">
+    <div class="order_header">
+            <h2> الكتب الدينية</h2>
+            <a href="">عرض الكل</a>
+
+    </div>
+    
+    <div class="order_content">
+                <div class="product_card">
+                    <img src="img/book.jpg" alt="Denim Jeans">
+                    <h3>كتاب الكتروني<i class="fa fa-book-reader"></i></h3>
+                                        <p class="price">$19.99</p>
+                    <h6>شامل الضريبة</h6>
+                    <h5>صيغ اخرى:كتب مطبوعة</h5>
+                    <div class="product_icons">
+                        <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+                        <a href=""><img src="img/svg/svgexport-21.svg" alt=""></a>
+                        <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+
+        
+                    </div>
+        
+        
+        
+                </div>
+
+
+        <div class="product_card">
+                <div class="remain_timer">
+                        <span id="days"></span>
+                        /<span id="hours"></span>
+                        :<span id="minutes"></span>
+                        :<span id="seconds"></span>
+                </div>
+            <img src="img/book.jpg" alt="Denim Jeans">
+            <h3>كتاب الكتروني<i class="fa fa-book-reader"></i></h3>
+            
+            <p class="price">$19.99</p>
+            <h6>شامل الضريبة</h6>
+            <h5>صيغ اخرى:كتب مطبوعة</h5>
+            <div class="product_icons">
+                <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+                <a href=""><img src="img/svg/svgexport-21.svg" alt=""></a>
+                <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    <div class="product_card">
+        <img src="img/book.jpg" alt="Denim Jeans">
+        <h3>كتاب الكتروني<i class="fa fa-book-reader"></i></h3>
+        
+        <p class="price">$19.99</p>
+        <h6>شامل الضريبة</h6>
+        <h5>صيغ اخرى:كتب مطبوعة</h5>
+        <div class="product_icons">
+            <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+            <a href=""><img src="img/svg/svgexport-21.svg" alt=""></a>
+            <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="product_card">
+        <img src="img/book.jpg" alt="Denim Jeans">
+        <h3>كتاب الكتروني<i class="fa fa-book-reader"></i></h3>
+        
+        <p class="price">$19.99</p>
+        <h6>شامل الضريبة</h6>
+        <h5>صيغ اخرى:كتب مطبوعة</h5>
+        <div class="product_icons">
+            <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+            <a href=""><img src="img/svg/svgexport-21.svg" alt=""></a>
+            <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+
+
+        </div>
+
+
+
+    </div>
+
+
+    
+
+</div>
+
+
+</div>
+
+<!-- second row -->
+<div class="order_container">
+        <div class="order_header">
+                <h2>الكتب السياسة</h2>
+                <a href="">عرض الكل</a>
+    
+        </div>
+        
+        <div class="order_content">
+                    <div class="product_card">
+                        <img src="img/book.jpg" alt="Denim Jeans">
+                        <h3>كتاب الكتروني<i class="fa fa-book-reader"></i></h3>
+                        
+                        <p class="price">$19.99</p>
+                        <h6>شامل الضريبة</h6>
+                        <h5>صيغ اخرى:كتب مطبوعة</h5>
+                        <div class="product_icons">
+                            <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+                            <a href=""><img src="img/svg/svgexport-21.svg" alt=""></a>
+                            <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+    
+            
+                        </div>
+            
+            
+            
+                    </div>
+    
+    
+            <div class="product_card">
+                <img src="img/book.jpg" alt="Denim Jeans">
+                <h3>كتاب الكتروني<i class="fa fa-book-reader"></i></h3>
+                
+                <p class="price">$19.99</p>
+                <h6>شامل الضريبة</h6>
+                <h5>صيغ اخرى:كتب مطبوعة</h5>
+                <div class="product_icons">
+                    <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+                    <a href=""><img src="img/svg/svgexport-21.svg" alt=""></a>
+                    <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+    
+    
+                </div>
+    
+    
+    
+            </div>
+    
+    
+    
+        <div class="product_card">
+            <img src="img/book.jpg" alt="Denim Jeans">
+            <h3>كتاب الكتروني<i class="fa fa-book-reader"></i></h3>
+            
+            <p class="price">$19.99</p>
+            <h6>شامل الضريبة</h6>
+            <h5>صيغ اخرى:كتب مطبوعة</h5>
+            <div class="product_icons">
+                <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+                <a href=""><img src="img/svg/svgexport-21.svg" alt=""></a>
+                <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+    
+    
+            </div>
+    
+    
+    
+        </div>
+    
+    
+    
+        <div class="product_card">
+            <img src="img/book.jpg" alt="Denim Jeans">
+            <h3>كتاب الكتروني<i class="fa fa-book-reader"></i></h3>
+            
+            <p class="price">$19.99</p>
+            <h6>شامل الضريبة</h6>
+            <h5>صيغ اخرى:كتب مطبوعة</h5>
+            <div class="product_icons">
+                <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+                <a href=""><img src="img/svg/svgexport-21.svg" alt=""></a>
+                <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+    
+    
+            </div>
+    
+    
+    
+        </div>
+    
+    
+        
+    
+    </div>
+    
+    
+    </div>
+
+
+<!-- third row -->
+<div class="order_container">
+        <div class="order_header">
+                <h2>الكتب الاقتصادية</h2>
+                <a href="">عرض الكل</a>
+    
+        </div>
+        
+        <div class="order_content">
+                    <div class="product_card">
+                        <img src="img/book.jpg" alt="Denim Jeans">
+                    
+                        <h3>كتاب الكتروني<i class="fa fa-book-reader"></i></h3>
+                        
+                        <p class="price">$19.99</p>
+                        <h6>شامل الضريبة</h6>
+                        <h5>صيغ اخرى:كتب مطبوعة</h5>
+                        <div class="product_icons">
+                            <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+                            <a href=""><img src="img/svg/svgexport-21.svg" alt=""></a>
+                            <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+    
+            
+                        </div>
+            
+            
+            
+                    </div>
+    
+    
+            <div class="product_card">
+                <img src="img/book.jpg" alt="Denim Jeans">
+                <h3>كتاب الكتروني<i class="fa fa-book-reader"></i></h3>
+                
+                <p class="price">$19.99</p>
+                <h6>شامل الضريبة</h6>
+                <h5>صيغ اخرى:كتب مطبوعة</h5>
+                <div class="product_icons">
+                    <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+                    <a href=""><img src="img/svg/svgexport-21.svg" alt=""></a>
+                    <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+    
+    
+                </div>
+    
+    
+    
+            </div>
+    
+    
+    
+        <div class="product_card">
+            <img src="img/book.jpg" alt="Denim Jeans">
+            <h3>كتاب الكتروني<i class="fa fa-book-reader"></i></h3>
+            
+            <p class="price">$19.99</p>
+            <h6>شامل الضريبة</h6>
+            <h5>صيغ اخرى:كتب مطبوعة</h5>
+            <div class="product_icons">
+                <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+                <a href=""><img src="img/svg/svgexport-21.svg" alt=""></a>
+                <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+    
+    
+            </div>
+    
+    
+    
+        </div>
+    
+    
+    
+        <div class="product_card">
+            <img src="img/book.jpg" alt="Denim Jeans">
+            <h3>كتاب الكتروني<i class="fa fa-book-reader"></i></h3>
+            
+            <p class="price">$19.99</p>
+            <h6>شامل الضريبة</h6>
+            <h5>صيغ اخرى:كتب مطبوعة</h5>
+            <div class="product_icons">
+                <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+                <a href=""><img src="img/svg/svgexport-21.svg" alt=""></a>
+                <a href=""><img src="img/svg/svgexport-55.svg" alt=""></a>
+    
+    
+            </div>
+    
+    
+    
+        </div>
+    
+    
+        
+    
+    </div>
+    
+    
+    </div>
+
+<!-- end orders -->
+
+
+<!-- start footer -->
+<footer>
 
     <div class="footer_container1">
         <div class="col1">
-          <a href=""><h2>
+        <a href=""><h2>
                 انضم الى نشرتنا البريدية
 
             </h2></a> 
             <hr>
-          <div class="subscribe">
-              <form action="">
-                  <input type="text" placeholder="ادخل بريدك الالكتروني">
-                  <button>  اشتراك</button>
-              </form>
+        <div class="subscribe">
+            <form action="">
+                <input type="text" placeholder="ادخل بريدك الالكتروني">
+                <button>  اشتراك</button>
+            </form>
 
-              </div>
-             <a href=""> <h2>
+            </div>
+            <a href=""> <h2>
                     تواصل معنا
-  
-               </a> </h2>
-              <hr>
-              <div class="social-media">
+
+            </a> </h2>
+            <hr>
+            <div class="social-media">
                     <li><a href="#"><img src="img/svg/svgexport-59.svg" alt=""></a> </li>
                     <li><a href="#"><img src="img/svg/svgexport-60.svg" alt=""></a> </li>
                     <li><a href="#"> <img src="img/svg/svgexport-61.svg" alt=""></a></li>
@@ -89,70 +581,69 @@
                     <li><a href="#"> <img src="img/svg/svgexport-64.svg" alt=""></a></li>
                     <li><a href="#"> <img src="img/svg/svgexport-65.svg" alt=""></a></li>
 
-              </div>
+            </div>
 
 
         
         </div>
 
         <div class="col1">
-           <a href=""><h2>
+        <a href=""><h2>
                 خدمة العملاء
             </h2></a> 
             <hr>
-          <a href=""><h4>مبيعات الشركات</h4></a>  
-           <a href=""> <h4>الاسئلة المتكررة</h4></a>
-             <a href=""><h4>دليل التسوق والمطبوعات</h4></a> 
-           <a href=""><h4>مواقع لمعارض</h4></a> 
-           <a href=""> <h4>سياسة الضمان</h4></a>
-           <a href=""><h4>سياسة الاسترجاع والاستبدال</h4></a> 
-           <a href=""><h4>اتصل بنا </h4></a> 
-          <a href=""> <h4>7777777777</h4></a> 
+            <a href=""><h4>مبيعات الشركات</h4></a>  
+            <a href=""> <h4>الاسئلة المتكررة</h4></a>
+            <a href=""><h4>دليل التسوق والمطبوعات</h4></a> 
+            <a href=""><h4>مواقع لمعارض</h4></a> 
+            <a href=""> <h4>سياسة الضمان</h4></a>
+            <a href=""><h4>سياسة الاسترجاع والاستبدال</h4></a> 
+            <a href=""><h4>7777777777 @ اتصل بنا </h4></a>  
         </div>
 
 
         <div class="col1">
-               <a href=""><h2>
+            <a href=""><h2>
                     خدمات جرير
 
                 </h2></a> 
                     <hr>
-                  <a href=""> <h4>خدمة تقسيط المشتريات</h4></a> 
-                   <a href=""><h4>خدمات ما بعد البيع</h4></a> 
-                   <a href=""> <h4>خدمة الحماية الشاملة</h4></a>
-                   <a href=""> <h4>حماية اجهزة ابل </h4></a> 
-                   <a href=""> <h4>بطاقة خصم جرير</h4></a>
-                   <a href=""><h4>بطاقة جرير للهدايا</h4></a> 
+                    <a href=""> <h4>خدمة تقسيط المشتريات</h4></a> 
+                    <a href=""><h4>خدمات ما بعد البيع</h4></a> 
+                    <a href=""> <h4>خدمة الحماية الشاملة</h4></a>
+                    <a href=""> <h4>حماية اجهزة ابل </h4></a> 
+                    <a href=""> <h4>بطاقة خصم جرير</h4></a>
+                    <a href=""><h4>بطاقة جرير للهدايا</h4></a> 
         </div>
 
 
         <div class="col1">
-               <a href=""><h2>
+            <a href=""><h2>
                     روابط سريعة
 
                 </h2></a> 
                     <hr>
-                   <a href=""> <h4>اصدارات جرير</h4></a>
-                   <a href=""><h4>قارئ جرير</h4></a> 
-                   <a href=""><h4>شركاء برامج المكافئات</h4></a> 
-                   <a href=""><h4>خدمات شركات الاتصالات</h4></a>  
+                    <a href=""> <h4>اصدارات جرير</h4></a>
+                    <a href=""><h4>قارئ جرير</h4></a> 
+                    <a href=""><h4>شركاء برامج المكافئات</h4></a> 
+                    <a href=""><h4>خدمات شركات الاتصالات</h4></a>  
         </div>
 
 
         <div class="col1">
-             <a href=""><h2>
+            <a href=""><h2>
                     عن جرير
 
-                 </h2></a>   
+                </h2></a>   
                     <hr>
-                   <a href=""><h4>من نحن</h4></a>
-                   <a href=""><h4>الحوكمة</h4></a>
-                   <a href=""><h4>علاقات المستثمرين والتقارير</h4></a>
-                   <a href=""><h4>الاستدامة</h4></a>
-                   <a href=""><h4>اللاخبار</h4></a>
+                    <a href=""><h4>من نحن</h4></a>
+                    <a href=""><h4>الحوكمة</h4></a>
+                    <a href=""><h4>علاقات المستثمرين والتقارير</h4></a>
+                    <a href=""><h4>الاستدامة</h4></a>
+                    <a href=""><h4>اللاخبار</h4></a>
 
-                  <a href=""> <h2>فرص العمل</h2></a>
-                   <hr>
+                    <a href=""> <h2>فرص العمل</h2></a>
+                    <hr>
 
         </div>
     </div>
@@ -174,8 +665,10 @@
 
     </div>
 
-  </footer>  
+</footer>  
+<!-- end footer -->
 
-  <script src="js/app.js"></script>
+
+ <script src="js/app.js"></script>
 </body>
 </html>
