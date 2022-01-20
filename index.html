@@ -8,6 +8,10 @@
     <title>elib</title>
 </head>
 <body>
+    <div id="hide" class="overlay hide">
+        
+    </div>
+    <!-- start navbar -->
 <nav>
     <div class="topnav">
         <div class="links">
@@ -43,6 +47,9 @@
         </div>
     </div>
 </nav>
+
+
+<!-- end nav bar -->
 
 <!-- start slider -->
 
@@ -84,93 +91,94 @@
 
 
 <!-- end slider -->
-
 <!-- start pop up -->
 
 <div class="container" id="model-container">
         
-    <form action=" " id="form">
-        <h4>تسجيل الدخول</h4>
-        <div class="input-control">
-            <input id="email" name="email" type="text" placeholder="البريد الالكترون او رقم الجوال">
-    
-        </div>
-        <div class="input-control">
-            <input id="password"name="password" type="password" placeholder="كلمة المرور" >
-            <span><a href="">نسيت؟</a></span>
-    
-        </div>
-        <button type="submit">تسجيل الدخول</button>
-        <p>ليس لديك حساب</p>
-        <button type="submit" class="log-in" id="signup">انشاء حساب جديد</button>
-
-    </form>
-</div>
-
-<div class="container" id="model-container2">
-        
         <form action=" " id="form">
-            <h4>انشاء حساب</h4>
-
+                <button type="button" class="cancel" onclick="closeForm()">X</button>
+            <h4>تسجيل الدخول</h4>
             <div class="input-control">
-                    <input id="phone" name="phone" type="text" placeholder="رقم الجوال">
-                    <div class="error"></div>
-                    <p>سوف نرسل لك رمز التحقق عن طريق رسالة نصية</p>
+                <input id="email" name="email" type="text" placeholder="البريد الالكترون او رقم الجوال">
+        
             </div>
-
-            <input type="button" placeholder="ارسال رمز التحقق">
-
             <div class="input-control">
-                    <input id="username" name="username" type="text" placeholder="الاسم الاول">
-            
-                </div>
-
-                <div class="input-control">
-                        <input id="username" name="username" type="text" placeholder="اسم العائلة">
-                
-                </div>
-
-                <div class="input-control">
-                            <input id="email" name="email" type="text" placeholder="البريد الالكتروني"> 
-                    
-                </div> 
-
-                <div class="input-control">
-                            <input id="email" name="email" type="text" placeholder="تأكيد البريد الالكتروني">
-                    
-                </div>
-                <div class="input-control">
-                        <input id="password"name="password" type="password" placeholder="كلمة المرور">
-                
-                </div>
-                <div class="checkbox">
-                        <input type="checkbox" id="accept">
-                        <label> اوافق على الشروط والاحكام</label>
-
-                </div>
-                <div class="checkbox">
-                    
-                <input type="checkbox" id="reg" >
-                <label> التسجيل للانضمام للنشرة الجوية</label>
-            
-
-                </div>
-
-            <input type="button" placeholder="انشاء حساب" >
-            <p>
-                لديك حساب؟ <a href="#" id="sign-in" >تسجيل الدخول</a>
-            </p>
+                <input id="password"name="password" type="password" placeholder="كلمة المرور" >
+                <span><a href="">نسيت؟</a></span>
+        
+            </div>
+            <button type="submit">تسجيل الدخول</button>
+            <p>ليس لديك حساب</p>
+            <button type="submit" class="log-in" id="signup">انشاء حساب جديد</button>
     
         </form>
     </div>
-
-
-<!-- end pop up -->
+    
+    <div class="container" id="model-container2">
+            
+            <form action=" " id="form">
+                    <button type="button" class="cancel" onclick="closeForm()">X</button>
+                <h4>انشاء حساب</h4>
+    
+                <div class="input-control">
+                        <input id="phone" name="phone" type="text" placeholder="رقم الجوال">
+                        <div class="error"></div>
+                        <p>سوف نرسل لك رمز التحقق عن طريق رسالة نصية</p>
+                </div>
+    
+                <input type="button" placeholder="ارسال رمز التحقق">
+    
+                <div class="input-control">
+                        <input id="username" name="username" type="text" placeholder="الاسم الاول">
+                
+                    </div>
+    
+                    <div class="input-control">
+                            <input id="username" name="username" type="text" placeholder="اسم العائلة">
+                    
+                    </div>
+    
+                    <div class="input-control">
+                                <input id="email" name="email" type="text" placeholder="البريد الالكتروني"> 
+                        
+                    </div> 
+    
+                    <div class="input-control">
+                                <input id="email" name="email" type="text" placeholder="تأكيد البريد الالكتروني">
+                        
+                    </div>
+                    <div class="input-control">
+                            <input id="password"name="password" type="password" placeholder="كلمة المرور">
+                    
+                    </div>
+                    <div class="checkbox">
+                            <input type="checkbox" id="accept">
+                            <label> اوافق على الشروط والاحكام</label>
+    
+                    </div>
+                    <div class="checkbox">
+                        
+                    <input type="checkbox" id="reg" >
+                    <label> التسجيل للانضمام للنشرة الجوية</label>
+                
+    
+                    </div>
+    
+                <input type="button" placeholder="انشاء حساب" >
+                <p>
+                    لديك حساب؟ <a href="" id="sign-in" >تسجيل الدخول</a>
+                </p>
+        
+            </form>
+        </div>
+    
+    
+    <!-- end pop up -->
 
 <!-- start explore -->
 
 <div class="exlpore_container">
-    <h2>العروض الحالية</h2>
+    <h2>تصفح حسب القسم </h2>
     <div class="explore_content">
         <div class="explore_card">
             <div class="icon">
@@ -249,13 +257,19 @@
 
 <div class="order_container">
     <div class="order_header">
-            <h2> الكتب الدينية</h2>
+            <h2> العروض الحالية</h2>
             <a href="">عرض الكل</a>
 
     </div>
     
     <div class="order_content">
                 <div class="product_card">
+                        <div class="remain_timer">
+                                <span id="days"></span>
+                                days/<span id="hours"></span>
+                                h:<span id="minutes"></span>
+                                m:<span id="seconds"></span>s
+                        </div>
                     <img src="img/book.jpg" alt="Denim Jeans">
                     <h3>كتاب الكتروني<i class="fa fa-book-reader"></i></h3>
                                         <p class="price">$19.99</p>
@@ -272,14 +286,12 @@
         
         
                 </div>
-
-
         <div class="product_card">
                 <div class="remain_timer">
-                        <span id="days"></span>
-                        /<span id="hours"></span>
-                        :<span id="minutes"></span>
-                        :<span id="seconds"></span>
+                        <span id="days1"></span>
+                        days/<span id="hours1"></span>
+                        h:<span id="minutes1"></span>
+                        m:<span id="seconds1"></span>s
                 </div>
             <img src="img/book.jpg" alt="Denim Jeans">
             <h3>كتاب الكتروني<i class="fa fa-book-reader"></i></h3>
@@ -302,6 +314,12 @@
 
 
     <div class="product_card">
+            <div class="remain_timer">
+                    <span id="days2"></span>
+                    days/<span id="hours2"></span>
+                    h:<span id="minutes2"></span>
+                    m:<span id="seconds2"></span>s
+            </div>
         <img src="img/book.jpg" alt="Denim Jeans">
         <h3>كتاب الكتروني<i class="fa fa-book-reader"></i></h3>
         
@@ -323,6 +341,12 @@
 
 
     <div class="product_card">
+            <div class="remain_timer">
+                    <span id="days3"></span>
+                    days/<span id="hours3"></span>
+                    h:<span id="minutes3"></span>
+                    m:<span id="seconds3"></span>s
+            </div>
         <img src="img/book.jpg" alt="Denim Jeans">
         <h3>كتاب الكتروني<i class="fa fa-book-reader"></i></h3>
         

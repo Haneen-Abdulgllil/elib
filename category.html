@@ -16,7 +16,7 @@
                             <ul>
                                     <li class="vertical_line"> <i class="fa  fa-home" id="icon"></i><a href="#">English</a></li> 
             
-                                    <li class="vertical_line"> <a href="#"> ادخل لحسابك او سجل الان<i class="fa fa-user" id="icon"></i></a></li> 
+                                    <li class="vertical_line"> <a href="#"  id="show-btnn"> ادخل لحسابك او سجل الان<i class="fa fa-user" id="icon"></i></a></li> 
             
                                     <li class="vertical_line"> <a href="#"><i class="fa  fa-Home" id="icon"></i>الريئسية</a></li> 
             
@@ -45,6 +45,8 @@
                     </div>
                 </div>
             </nav>
+   
+    
 <!-- end nav bar -->
 
 <!-- start slider -->
@@ -87,6 +89,87 @@
     
     
     <!-- end slider -->
+    <!-- start pop up -->
+
+<div class="container" id="model-container">
+        
+        <form action=" " id="form">
+            <h4>تسجيل الدخول</h4>
+            <div class="input-control">
+                <input id="email" name="email" type="text" placeholder="البريد الالكترون او رقم الجوال">
+        
+            </div>
+            <div class="input-control">
+                <input id="password"name="password" type="password" placeholder="كلمة المرور" >
+                <span><a href="">نسيت؟</a></span>
+        
+            </div>
+            <button type="submit">تسجيل الدخول</button>
+            <p>ليس لديك حساب</p>
+            <button type="submit" class="log-in" id="signup">انشاء حساب جديد</button>
+    
+        </form>
+    </div>
+    
+    <div class="container" id="model-container2">
+            
+            <form action=" " id="form">
+                <h4>انشاء حساب</h4>
+    
+                <div class="input-control">
+                        <input id="phone" name="phone" type="text" placeholder="رقم الجوال">
+                        <div class="error"></div>
+                        <p>سوف نرسل لك رمز التحقق عن طريق رسالة نصية</p>
+                </div>
+    
+                <input type="button" placeholder="ارسال رمز التحقق">
+    
+                <div class="input-control">
+                        <input id="username" name="username" type="text" placeholder="الاسم الاول">
+                
+                    </div>
+    
+                    <div class="input-control">
+                            <input id="username" name="username" type="text" placeholder="اسم العائلة">
+                    
+                    </div>
+    
+                    <div class="input-control">
+                                <input id="email" name="email" type="text" placeholder="البريد الالكتروني"> 
+                        
+                    </div> 
+    
+                    <div class="input-control">
+                                <input id="email" name="email" type="text" placeholder="تأكيد البريد الالكتروني">
+                        
+                    </div>
+                    <div class="input-control">
+                            <input id="password"name="password" type="password" placeholder="كلمة المرور">
+                    
+                    </div>
+                    <div class="checkbox">
+                            <input type="checkbox" id="accept">
+                            <label> اوافق على الشروط والاحكام</label>
+    
+                    </div>
+                    <div class="checkbox">
+                        
+                    <input type="checkbox" id="reg" >
+                    <label> التسجيل للانضمام للنشرة الجوية</label>
+                
+    
+                    </div>
+    
+                <input type="button" placeholder="انشاء حساب" >
+                <p>
+                    لديك حساب؟ <a href="#" id="sign-in" >تسجيل الدخول</a>
+                </p>
+        
+            </form>
+        </div>
+    
+    
+    <!-- end pop up -->
             
 <!-- start footer -->
 <footer>

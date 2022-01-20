@@ -5,6 +5,19 @@ body{
 *{
     font-family:'Tajawal';
 }
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #717171;
+    transition: 0.5s;
+    z-index: 11;
+}
+.hide{
+    display: none;
+}
 .topnav{
     display: flex;
     width: 100%;
@@ -86,6 +99,7 @@ width: 60px;
 /* start slider */
 
 /* start slider section */
+
 .mySlides {display: none}
 .mySlides img {vertical-align: middle;}
 
@@ -155,10 +169,11 @@ width: 60px;
   /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
-}
+} 
 /* end slider section */
 
 /* end slider */
+
 
 /* start explore */
 .exlpore_container{
@@ -331,8 +346,14 @@ width: 60px;
 }
 
 .product_card .remain_timer{
-    position: relative;
     margin-bottom: 6px;
+    width: 180px;
+    height: 5px;
+    background-color: rgb(7, 221, 7);
+    align-items: center;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
 }
 .product_card .price{
     font-size: 20px;
@@ -481,6 +502,7 @@ form button{
     grid-gap: 5px;
     margin-top: 70px;
     text-align: center;
+    position: relative;
 
 }
 @media screen and (max-width:600px){
@@ -490,7 +512,18 @@ form button{
 
 }
 
+#form .cancel{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    color: black;
+    font-size: 30px;
+    font-weight: blod;
+    background-color: lightgray;
 
+}
 
 #form button {
     padding: 10px;

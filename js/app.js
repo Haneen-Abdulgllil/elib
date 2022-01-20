@@ -25,8 +25,40 @@
 
     d.innerHTML = remain_days;
     h.innerHTML= remain_hours;
-    m.innerHTML = remain_minutes;
+    m.innerHTML = remain_minutes;2
     s.innerHTML = remain_seconds; 
+// *********************************************************
+    var d1 = document.getElementById('days1');
+    var h1 = document.getElementById('hours1');
+    var m1 = document.getElementById('minutes1');
+    var s1 = document.getElementById('seconds1');
+
+    d1.innerHTML = remain_days;
+    h1.innerHTML= remain_hours;
+    m1.innerHTML = remain_minutes;2
+    s1.innerHTML = remain_seconds; 
+
+//    *******************************************************************8
+    var d2 = document.getElementById('days2');
+    var h2 = document.getElementById('hours2');
+    var m2 = document.getElementById('minutes2');
+    var s2 = document.getElementById('seconds2');
+
+    d2.innerHTML = remain_days;
+    h2.innerHTML= remain_hours;
+    m2.innerHTML = remain_minutes;2
+    s2.innerHTML = remain_seconds; 
+
+    // **************************************************************88
+    var d3 = document.getElementById('days3');
+    var h3 = document.getElementById('hours3');
+    var m3 = document.getElementById('minutes3');
+    var s3 = document.getElementById('seconds3');
+
+    d3.innerHTML = remain_days;
+    h3.innerHTML= remain_hours;
+    m3.innerHTML = remain_minutes;2
+    s3.innerHTML = remain_seconds; 
 
 
 }
@@ -39,32 +71,35 @@ var i = setInterval(countdown,1000);
 
 
 // start pop up
+
+
 const modelcontainer = document.getElementById("model-container");
 const showBtn = document.getElementById("show-btnn");
 showBtn.addEventListener("click",()=>{
     modelcontainer.style.visibility = 'visible';
+    hideBody.style.visibility = 'visible';
 }) ;
 
-window.onclick = function(showBtn) {
-    if (showBtn.target == modelcontainer) {
-        modelcontainer.style.display = "none";
-    }
-}
+
+
 
 const modelcontainer2 = document.getElementById("model-container2");
 const showBtn1 = document.getElementById("signup");
 showBtn1.addEventListener("click",()=>{
     modelcontainer2.style.visibility = 'visible';
-}) ;
+});
 
-const modelcontainer3 = document.getElementById("model-container");
 const showBtn2 = document.getElementById("sign-in");
 showBtn2.addEventListener("click",()=>{
-    modelcontainer3.style.visibility = 'visible';
+    modelcontainer.style.visibility = 'visible';
+    modelcontainer2.style.visibility = 'hidden';
 }) ;
 
-
-
+function closeForm() {
+    document.getElementById("model-container").style.display = "none";
+    document.getElementById("model-container2").style.display = "none";
+}
+const hideBody = document.getElementById("hide");
 // end pop up 
 
 // start slider
@@ -95,7 +130,5 @@ for (i = 0; i < dots.length; i++) {
     dots[slideIndex-1].className += " active";
 }
 // end slider
-
-
 
 

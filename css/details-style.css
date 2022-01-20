@@ -1,0 +1,190 @@
+
+
+.details-container{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+/* start book list */
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    text-align: right;
+
+}
+
+  /* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 15px;
+}
+
+  /* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    content: "/\00a0";
+    color: #0275d8;
+}
+
+  /* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+
+}
+
+  /* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+/* end book list */
+/* start book details */
+
+.book-details{
+    display: flex;
+    flex-direction:row-reverse;
+    gap: 5%;
+}
+.right{
+    width: 30%;
+}
+.right .right-container{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10px;
+    width: 80%;
+}
+.right .main-img img{
+    padding: 5px;
+
+}
+.right .thumpnail-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 70%;
+}
+
+.right .thumpnail-img img{
+    border: 1px #444 solid;
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 7%;
+}
+.right-popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    visibility: hidden;
+    padding: 30px;
+    height: auto;
+    background-color: #868686;
+
+
+}
+#form .cancel-popup{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 80%;
+    right: 20px;
+    color: black;
+    font-size: 30px;
+    font-weight: blod;
+    background-color: lightgray;
+
+}
+/* Hide the images by default */
+.mySlidesBook {
+    display: none;
+}
+
+
+  /* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+  /* Next & previous buttons */
+.prevBook,
+.nextBook {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+    background-color: #444;
+}
+
+  /* Position the "next button" to the right */
+.nextBook {
+    right:30px;
+    border-radius: 3px 0 0 3px;
+}
+
+  /* On hover, add a black background color with a little bit see-through */
+.prevBook:hover,
+.nextBook:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+  /* Number text (1/3 etc) */
+.numbertext {
+    color: #363636;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 10%;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+  /* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+  /* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+/* end book details */
+
+
+.center{
+    background-color: brown;
+    width: 30%;
+}
+.left{
+    background-color: crimson;
+    width: 30%;
+}
