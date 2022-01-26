@@ -4,10 +4,10 @@ const nextBTN = document.getElementById('next-btn');
 const prevBTN = document.getElementById('prev-btn');
 const progress = document.getElementById('progress');
 const steps = document.querySelectorAll(".circle1");
-
+const stepBtn = document.getElementById('sign-in');
 
 let index = -1;
-nextBTN.addEventListener("click",function(){
+stepBtn.addEventListener("click",function(){
     index++;
     if(index >= steps.length)
     {
@@ -25,23 +25,8 @@ prevBTN.addEventListener("click",function(){
     change();
 });
 
-
-function change(){
-    steps.forEach( (item,i) => {
-        if(i<index){
-            item.classList.add('active');
-        }
-    
-    else{
-        item.classList.remove('active');
-    }
+const complete = document.getElementById('done');
+complete.addEventListener("click",()=>{
 });
-}
 
 
-// start book-pop-up
-const completeShopping= document.getElementById("done");
-const progressSteps = document.getElementById("complete-shopping");
-completeShopping.addEventListener("click",()=>{
-    progressSteps.style.visibility = 'visible';
-}) ;

@@ -33,7 +33,7 @@ function plusSlidesBook(n) {
 const bookcontainer = document.getElementById("book-pop-up");
 const showBook = document.getElementById("img-show");
 showBook.addEventListener("click",()=>{
-    bookcontainer.style.visibility = 'visible';
+    bookcontainer.style.display = 'block';
 }) ;
 
 function closeForm() {

@@ -5,7 +5,7 @@ body{
 *{
     font-family:'Tajawal';
 }
-.container{
+.container-cart{
     margin: 10px;
     padding: 10px;
     display: flex;
@@ -14,14 +14,14 @@ body{
     justify-content: flex-start;
 
 }
-.container .head{
+.container-cart .head{
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
 }
-.container .head i{
+.container-cart .head i{
     font-size: 25px;
 }
-.container .head h2 sub{
+.container-cart .head h2 sub{
     font-size: 10px;
     color: dimgray;
 }
@@ -111,6 +111,7 @@ body{
     flex-direction: row-reverse;
     width: 50%;
     justify-content: center;
+
 }
 .product .row .pro-left .col2-left #btn1 button{
     height: 100%;
@@ -159,7 +160,7 @@ body{
     font-weight: bold;
 }
 .left .total .row1 .col h3{
-    color: rgb(185, 8, 8);;
+    color: rgb(185, 8, 8);
 }
 .left .total .row1 .col h3 sub{
     color: darkslategrey;
@@ -176,112 +177,61 @@ body{
     display: flex;
     flex-direction: column;
     gap: 5px;
+    justify-content: center;
+    justify-items: center;
 }
 .left .total .row2 p{
     direction: rtl;
     font-size: 13px;
 }
-.left .total .row2  button{
+.left .total .row2 a button{
     background-color: rgb(185, 8, 8);
     height: 40px;
     border: none;
     border-radius: 5px;
     color: white;
-}
-
-
-
-
-
-
-:root{
-    --cir-defaault:#ccc;
-    --cir-active:green;
-}
-
-.complete-shopping{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    visibility: hidden;
-    padding: 30px;
-    height: auto;
-    background-color: #cfcaca;
-    width: 50%;
-
-}
-
-.complete-container{
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items:center; 
-    margin-top: 20vh;
-    position: relative;
-    height: 10vh;
-    z-index: -2;
-
-}
-.progress{
-    width: 80%;
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-
 }
 
 
-.progress::before{
-    content: '';
-    background-color:var(--cir-active);
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 2px;
-    z-index: -1;
 
-}
-.active{
-    background-color:var(--cir-active) !important;
-    border-color:var(--cir-active) !important;
-    color:white; 
-
-}
-
-.circle1{
-    border: 2px var(--cir-defaault) solid;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:white;
-
-}
-.container-btn{
-    width: 100%;
-    color: white;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20vh;
-    position: relative;
-}
-.btn{
-    background-color: #fdb5e7;
-    color: #444;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    border: none;
+/* start responsive */
+@media screen and (max-width:600px){
+    .content{
+        flex-direction: column;
     }
-
-
-
-
+    .right{
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+    }
+    .product{
+        padding: 10px;
+    }
+    .product .row .pro-center .note{
+        padding: 15px;
+        width: 100%;
+    }
+    .product .row .pro-center h3{
+        font-size: 11px;
+    }
+    .product .row .pro-center .note .line1{
+        font-size: 8px;
+    }
+    
+    .product .row .pro-center .note .line2 a{
+        font-size: 9px;
+    }
+    .product .row .pro-left .col1-left{
+        font-size: 15px;
+    }
+    .product .row .pro-left .col2-left{
+    width: 20%;
+    padding-left: 20px;
+    }
+}
+/* end responsive */
 
 
 

@@ -1,4 +1,13 @@
 
+// nav responsive
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
 
 // start timer
     const countdown=()=>{
@@ -76,8 +85,8 @@ var i = setInterval(countdown,1000);
 const modelcontainer = document.getElementById("model-container");
 const showBtn = document.getElementById("show-btnn");
 showBtn.addEventListener("click",()=>{
-    modelcontainer.style.visibility = 'visible';
-    hideBody.style.visibility = 'visible';
+    modelcontainer.style.display = 'block';
+
 }) ;
 
 
@@ -86,21 +95,25 @@ showBtn.addEventListener("click",()=>{
 const modelcontainer2 = document.getElementById("model-container2");
 const showBtn1 = document.getElementById("signup");
 showBtn1.addEventListener("click",()=>{
-    modelcontainer2.style.visibility = 'visible';
+    modelcontainer2.style.display = 'block';
 });
 
 const showBtn2 = document.getElementById("sign-in");
 showBtn2.addEventListener("click",()=>{
-    modelcontainer.style.visibility = 'visible';
-    modelcontainer2.style.visibility = 'hidden';
+    modelcontainer2.style.display = 'none';
+    modelcontainer.style.display = 'block';
 }) ;
 
 function closeForm() {
     document.getElementById("model-container").style.display = "none";
     document.getElementById("model-container2").style.display = "none";
 }
-const hideBody = document.getElementById("hide");
+
 // end pop up 
+
+
+
+
 
 // start slider
 var slideIndex = 1;
@@ -128,7 +141,51 @@ for (i = 0; i < dots.length; i++) {
 }
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
+
+    setTimeout(showSlides ,3000);
 }
 // end slider
 
 
+
+
+// start counter 
+
+const display = document.getElementById('result');
+    
+function clickCounter() {
+    if (typeof(Storage) !== "undefined") {
+    if (localStorage.clickcount) {
+        localStorage.clickcount = Number(localStorage.clickcount)+1;
+    } else {
+        localStorage.clickcount = 1;
+    }
+    display.innerHTML =  localStorage.clickcount ;
+    }
+}
+// end counter
+
+
+
+
+
+
+// start swtich languages
+
+function togglestyle() {
+    var styles = document.getElementsByTagName('link')[0];
+    var EN = document.getElementById('en');
+    var AR = document.getElementById('ar');
+
+    if (styles.getAttribute('href') == 'css/style.css') {
+        styles.setAttribute('href', 'css/style-eng.css');
+        EN.style.display = 'block';
+        AR.style.display = 'none';
+
+    }
+    else {
+        styles.setAttribute('href', 'css/style.css');
+        AR.style.display = 'block';
+        EN.style.display = 'none';
+    }
+}

@@ -1,4 +1,10 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+body{
+    font-family:'Tajawal';
+}
+*{
+    font-family:'Tajawal';
+}
 
 .details-container{
     margin: 20px;
@@ -47,10 +53,11 @@ ul.breadcrumb li a:hover {
 .book-details{
     display: flex;
     flex-direction:row-reverse;
-    gap: 5%;
+    justify-content: right;
+    justify-content: space-between;
 }
 .right{
-    width: 30%;
+    width: 33%;
 }
 .right .right-container{
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -59,10 +66,12 @@ ul.breadcrumb li a:hover {
     justify-content: space-around;
     align-items: center;
     padding-bottom: 10px;
-    width: 80%;
+    width: 100%;
 }
 .right .main-img img{
     padding: 5px;
+    width: 100%;
+    height:400px;
 
 }
 .right .thumpnail-img{
@@ -79,16 +88,26 @@ ul.breadcrumb li a:hover {
     border-radius: 5px;
     max-width: 7%;
 }
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 8;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4); 
+}
 .right-popup{
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 40%;
-    visibility: hidden;
     padding: 30px;
     height: auto;
-    background-color: #868686;
+    background-color: #7c7a7a;
 
 
 }
@@ -155,11 +174,6 @@ ul.breadcrumb li a:hover {
 }
 
 
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
 
   /* Six columns side by side */
 .column {
@@ -181,10 +195,345 @@ ul.breadcrumb li a:hover {
 
 
 .center{
-    background-color: brown;
-    width: 30%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
 }
+.center .top{
+    line-height: 3px;
+    direction: rtl;
+    padding: 5px;
+}
+.center .top a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.center .top h3{
+    color: rgb(185, 8, 8);
+    
+}
+.center .top h6{
+    color: rgb(110, 109, 109);
+    margin-top: -10px;
+    margin-right: 10px;
+}
+
+.center .midle{
+    line-height: 0px;
+    padding: 5px;
+    color: #01447e;
+}
+.center .midle .feedback{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    
+}
+.center .midle .feedback p{
+    font-weight: bold;
+}
+.center .midle .feedback i{
+    color: darkorange;
+}
+
+.down{
+    line-height: 5px;
+    padding: 5px;
+    color: #01447e;
+    font-size: 18px;
+    direction: rtl;
+}
+.down .l{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 15px;
+    line-height: 0;
+
+}
+.down .l h4{
+    color: rgb(185, 8, 8);
+}
+
 .left{
-    background-color: crimson;
-    width: 30%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+
+}
+.left .left-container{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;                          
+                                
+
+}
+.left .left-container .note{
+    background-color: rgb(250, 239, 235);
+    border-right: 7px solid orange;
+    padding: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    direction: rtl;
+    line-height: 0;
+    margin-bottom: 10px;
+}
+.left .left-container .note .line1{
+    display: flex;
+    flex-direction: row;
+}
+.left .left-container .note .line1 #note{
+    font-weight: bold;
+}
+
+.left .left-container .note .line2 a{
+    padding-top: -10px;
+    text-decoration: none;
+    color: rgb(5, 5, 168);
+    font-weight: normal;
+    font-size: 15px;
+    
+}
+.left .left-container .buttons{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    gap: 5%;
+}
+.left .left-container .buttons button{
+    border: none;
+    border-radius: 3px;
+    text-align: center;
+    height: 40px;
+    font-size: 20px;
+}
+.left .left-container .buttons #btn1{
+    width: 20%;
+    background-color: rgb(185, 204, 247);
+
+}
+.left .left-container .buttons #btn2 {
+    width: 75%;
+    background-color:  rgb(185, 8, 8);
+    color: white;
+
+}
+.left .left-container .features{
+    display: grid;
+    grid-template-columns: auto auto;
+    direction: rtl;
+    justify-content: space-around;
+    width: 100%;
+    margin: 20px 0 20px 0;
+    padding: 10px 0 10px 0;
+    row-gap: 15px;
+    color: #053158;
+    background-color: rgb(244, 246, 252);
+    border-radius: 5px;
+}
+.left .left-container .features i{
+    color: #4dacff;
+    border-radius: 50%;
+    border: 1px solid #4dacff;
+    justify-self: center;
+    margin: 5px;
+    padding: 7px;
+    font-size: 10px;
+}
+.left .left-container hr{
+    width: 100%;
+}
+.share-container{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    width: 100%;
+    gap: 2px;
+    color: #053158;
+    padding-bottom: 10px;
+}
+.share-container .share{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 25%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10%;
+    border-radius: 7px;
+    padding-right: 10px;
+    height: 50px;
+}
+.share-container .favorate{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 25%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10%;
+    border-radius: 7px;
+    padding-right: 10px;
+    height: 50px;
+
+}
+
+.share-container .compare{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 25%;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10%;
+    border-radius: 7px;
+    padding-right: 10px;
+    height: 50px;
+    
+}
+.left .share-again{
+    width: 100%;
+    margin-top: 20px;
+    
+}
+.more-details{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.more-details .explain{
+    width: 100%;
+    background-color: #e4eef7;
+    direction: rtl;
+    border-bottom: 1px solid  #92c9fa;
+    border-top:  1px solid #92c9fa;
+    
+}
+
+.more-details .explain p{
+    padding-right: 30px;
+    color: #053158;
+    
+}
+.more-details .specification{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    color: #053158;
+    margin-left: 5%;
+    margin-bottom: 20px;
+}
+.more-details .specification .spec{
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    padding: 20px;
+    border-bottom: 1px solid  #92c9fa;
+
+}
+.more-details .specification .spec .col1:last-child{
+    font-weight: bold;
+    margin-right: auto;
+}
+.show-more{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+    direction: ltr;
+}
+.show-more a{
+    text-decoration: none;
+    color: #053158;
+}
+.custmer-feedback{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    margin: 20px;
+    padding:30px ;
+}
+.custmer-feedback .head{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.custmer-feedback .head h2{
+    font-weight: bold;
+}
+.custmer-feedback .head button{
+    background-color: #053158;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.custmer-feedback .examples{
+    display: flex;
+    flex-direction: column;
+    direction: rtl;
+    padding-right: 20px;
+
+
+}
+.custmer-feedback .examples .ex{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: #f5f8fa;
+    line-height: 0;
+    padding: 0 20px 0 20px;
+    border-radius: 5px;
+}
+.custmer-feedback .examples .ex .ex-details{
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.custmer-feedback .examples .ex .ex-details p{
+    color: #053158;
+}
+
+@media screen and (max-width:700px){
+    
+.book-details{
+    display: flex;
+    flex-direction: column;
+}
+.right , .center , .left{
+    width: 100%
+}
+
+.left .left-container .note .line1 p{
+    font-size: 10px;
+}
+.left .left-container .note .line2 a{
+    font-size: 10px;
+}
+.custmer-feedback .head button{
+    font-size: 15px;
+}
+.prevBook,
+.nextBook {
+    top: 60%;
+    width: auto;
+    padding: 10px;
+    margin-top: -50px;
+    font-size: 10px;
+}
+.numbertext {
+    color: #363636;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+}
+
 }

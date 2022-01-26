@@ -6,10 +6,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/cart-style.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>cart</title>
 </head>
 <body>
-    <div class="container">
+    
+        <nav>
+                <div class="topnav"  id="myTopnav">
+                    <div class="links">
+                        <ul>
+                        
+                            <li class="vertical_line"> <a href="" id="show-btnn"><i class="fa fa-user" id="icon"></i> ادخل لحسابك او سجل الان</a></li> 
+    
+                            <li class="vertical_line"> <a href="index.html"><i class="fa  fa-home" id="icon"></i>الريئسية</a></li> 
+    
+                            <li class="vertical_line"> <a href="#"><i class="fa  fa-address-card" id="icon"></i>من نحن</a></li> 
+                        
+                            <li class="vertical_line"> <a href="#"><i class="fa  fa-phone" id="icon"></i>اتصل بنا</a></li> 
+    
+                            <li class="vertical_line"><a href="#"><i class="fa  fa-info" id="icon"></i>المساعدة</a>  </li> 
+    
+                            <li class="vertical_line"> <a href="#"><i class="fa  fa-user-secret" id="icon"></i>سياسة الخصوصية</a></li> 
+    
+                            <li class="vertical_line"><a href="#"><i class="fa  fa-car" id="icon"></i>اليمن</a> </li>
+
+                            <li class="vertical_line"> <a href="#"><i class="fa  fa-star" id="icon"></i>الانجليزية</a></li> 
+    
+
+                            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                                <i class="fa fa-bars"></i>
+                                
+                    </ul>
+                    </div>
+                    <div class="search">
+                        <div class="logo">
+                            <a href=""><img src="img/logo.png" alt=""></a>
+                        </div>
+                    
+                        <button><i class="fa  fa-search" id="icon"></i>البحث</button>
+                        <a href="cart.html"> <i class="fa fa-cart-plus" id="icon"></i></a>
+                        
+            
+                    </div>
+                </div>
+            </nav>
+            
+            
+            <!-- end nav bar -->
+            
+    <div class="container-cart">
         <div class="head">
                 <h2>السلة 
                         <sub>(3 منتجات)</sub><i class="fa fa-cart-plus" id="icon"></i> 
@@ -207,7 +252,7 @@
                     </div>
                     <div class="row2">
                             <p>بالضغط على انهاء الشراء فأنت الان توافق على الشروط والاحكام وسسياسة الخصوصية</p>
-                            <button id="done">  انهاء التسوق </button>
+                            <a href="payment.html"> <button id="done" onclick="complete()">  انهاء التسوق </button></a> 
 
                     </div>
 
@@ -220,26 +265,129 @@
     </div>
 
     
-    <div class="complete-shopping" id="complete-shopping">
-        
-            <div class="complete-container">
-                    <div class="progress" id="progress">
-                            <div class="circle1">1</div>
-                            <div class="circle1">2</div>
-                            <div class="circle1">3</div>
-                            <div class="circle1">4</div>
+
+            <!-- start footer -->
             
+            
+            <footer>
+                
+                    <div class="footer_container1">
+                        <div class="col1">
+                        <a href=""><h2>
+                                انضم الى نشرتنا البريدية
+                
+                            </h2></a> 
+                            <hr>
+                        <div class="subscribe">
+                            <form action="">
+                                <input type="text" placeholder="ادخل بريدك الالكتروني">
+                                <button>  اشتراك</button>
+                            </form>
+                
+                            </div>
+                            <a href=""> <h2>
+                                    تواصل معنا
+                
+                            </a> </h2>
+                            <hr>
+                            <div class="social-media">
+                                    <li><a href="#"><img src="img/svg/svgexport-59.svg" alt=""></a> </li>
+                                    <li><a href="#"><img src="img/svg/svgexport-60.svg" alt=""></a> </li>
+                                    <li><a href="#"> <img src="img/svg/svgexport-61.svg" alt=""></a></li>
+                                    <li><a href="#"><img src="img/svg/svgexport-62.svg" alt=""></a> </li>
+                                    <li><a href="#"> <img src="img/svg/svgexport-63.svg" alt=""></a></li>
+                                    <li><a href="#"> <img src="img/svg/svgexport-64.svg" alt=""></a></li>
+                                    <li><a href="#"> <img src="img/svg/svgexport-65.svg" alt=""></a></li>
+                
+                            </div>
+                
+                
+                        
+                        </div>
+                
+                        <div class="col1">
+                        <a href=""><h2>
+                                خدمة العملاء
+                            </h2></a> 
+                            <hr>
+                            <a href=""><h4>مبيعات الشركات</h4></a>  
+                            <a href=""> <h4>الاسئلة المتكررة</h4></a>
+                            <a href=""><h4>دليل التسوق والمطبوعات</h4></a> 
+                            <a href=""><h4>مواقع لمعارض</h4></a> 
+                            <a href=""> <h4>سياسة الضمان</h4></a>
+                            <a href=""><h4>سياسة الاسترجاع والاستبدال</h4></a> 
+                            <a href=""><h4>7777777777 @ اتصل بنا </h4></a>  
+                        </div>
+                
+                
+                        <div class="col1">
+                            <a href=""><h2>
+                                    خدمات جرير
+                
+                                </h2></a> 
+                                    <hr>
+                                    <a href=""> <h4>خدمة تقسيط المشتريات</h4></a> 
+                                    <a href=""><h4>خدمات ما بعد البيع</h4></a> 
+                                    <a href=""> <h4>خدمة الحماية الشاملة</h4></a>
+                                    <a href=""> <h4>حماية اجهزة ابل </h4></a> 
+                                    <a href=""> <h4>بطاقة خصم جرير</h4></a>
+                                    <a href=""><h4>بطاقة جرير للهدايا</h4></a> 
+                        </div>
+                
+                
+                        <div class="col1">
+                            <a href=""><h2>
+                                    روابط سريعة
+                
+                                </h2></a> 
+                                    <hr>
+                                    <a href=""> <h4>اصدارات جرير</h4></a>
+                                    <a href=""><h4>قارئ جرير</h4></a> 
+                                    <a href=""><h4>شركاء برامج المكافئات</h4></a> 
+                                    <a href=""><h4>خدمات شركات الاتصالات</h4></a>  
+                        </div>
+                
+                
+                        <div class="col1">
+                            <a href=""><h2>
+                                    عن جرير
+                
+                                </h2></a>   
+                                    <hr>
+                                    <a href=""><h4>من نحن</h4></a>
+                                    <a href=""><h4>الحوكمة</h4></a>
+                                    <a href=""><h4>علاقات المستثمرين والتقارير</h4></a>
+                                    <a href=""><h4>الاستدامة</h4></a>
+                                    <a href=""><h4>اللاخبار</h4></a>
+                
+                                    <a href=""> <h2>فرص العمل</h2></a>
+                                    <hr>
+                
+                        </div>
                     </div>
-                            
-                    
-                </div>
-            <div class="container-btn ">
-                    <button id="next-btn" class="btn">next</button>
-                    <button id="prev-btn" class="btn">prev</button>
-            </div>
-        
-            </div>
-        
+                
+                    <div class="footer_container2">
+                        <div class="brand_links">
+                            <img src="img/svg/svgexport-66.svg" alt="">
+                            <img src="img/svg/svgexport-67.svg" alt="">
+                            <img src="img/svg/svgexport-68.svg" alt="">
+                            <img src="img/svg/svgexport-69.svg" alt="">
+                            <img src="img/svg/svgexport-70.svg" alt="">
+                            <img src="img/svg/svgexport-71.svg" alt="">
+                        </div>
+                    <div class="copy_right">
+                        <a href="">ساسية الخصوصية</a>
+                        <a href="">|  شروط الخدمة</a>
+                            <p>جميع الحقوق محفوظة لمكتبة جرير 2015 &copy س ب : 66666666666 اونلاين س ب:88888888</p>
+                        </div>
+                
+                    </div>
+                
+                </footer>  
+                <!-- end footer -->
+                
+
+    <script src="js/app.js"></script>   
     <script src="js/cart.js"></script>
 </body>
 </html>
