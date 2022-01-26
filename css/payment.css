@@ -190,6 +190,17 @@
     right: 75%;
 
 }
+
+.total-price{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5%;
+    direction: rtl;
+}
+.total-price p{
+    color: rgb(139, 5, 5);
+    font-weight: bold;
+}
 @media screen and (max-width:600px){
     
 .formSteps{

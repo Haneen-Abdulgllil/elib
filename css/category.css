@@ -70,7 +70,7 @@ ul.breadcrumb li a:hover {
     padding: 15px;
     border-radius: 10px;
 }
-input[type=text]{
+input #searchbar[type=text]{
     width: 30%;
     -webkit-transition: width 0.15s ease-in-out;
     transition:  width 0.15s ease-in-out;

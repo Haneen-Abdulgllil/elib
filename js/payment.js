@@ -57,7 +57,8 @@ function change(){
 function changef(){
     formsteps.forEach( (item1,j) => {
         if(j<index1){
-            item1.style.visibility = "visible"
+            item1.style.visibility = "visible";
+            
         }
 
     else{

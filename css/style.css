@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
 body{
     font-family:'Tajawal';
-    direction: ltr;
-    text-align: left;
 }
 *{
     font-family:'Tajawal';
@@ -13,7 +11,7 @@ body{
     width: 100%;
     flex-direction: column;
     justify-content: center;
-   direction: rtl;
+    direction: rtl;
 }
 
 
@@ -551,7 +549,6 @@ form button{
 
 #form {
     width: 450px;
-    margin: 5vh 0 0 0;
     padding: 15px;
     background-color: lightgray;
     border-radius: 4px;
@@ -689,12 +686,12 @@ form button{
     width: 100%;
 }
 .container{
-    top: 20px;
     right: 5%;
+    padding-left: 8%;
 
 }
 #form {
-    width: 280px;
+    width: 250px;
 }
 }
 /* end responsive */

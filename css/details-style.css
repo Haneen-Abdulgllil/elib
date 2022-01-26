@@ -478,6 +478,7 @@ ul.breadcrumb li a:hover {
     flex-direction: column;
     direction: rtl;
     padding-right: 20px;
+    width: fit-content;
 
 
 }
@@ -489,6 +490,7 @@ ul.breadcrumb li a:hover {
     line-height: 0;
     padding: 0 20px 0 20px;
     border-radius: 5px;
+    justify-content: center;
 }
 .custmer-feedback .examples .ex .ex-details{
     padding-right: 20px;
@@ -511,7 +513,7 @@ ul.breadcrumb li a:hover {
 }
 
 .left .left-container .note .line1 p{
-    font-size: 10px;
+    font-size: 7px;
 }
 .left .left-container .note .line2 a{
     font-size: 10px;
@@ -535,5 +537,31 @@ ul.breadcrumb li a:hover {
     top: 10%;
     left: 30%;
 }
+.custmer-feedback .examples .ex{
+    width: 100%;
+}
+.left .left-container .buttons button{
+    font-size: 10px;
+}
+.share-container{
+    display: flex;
+    flex-direction:column;
+}
+.share-container .share {
+    width: 100%;
+    padding-right: 2px;
+}
 
+.share-container .favorate {
+    width: 100%;
+    padding-right: 2px;
+}
+.share-container .compare {
+    width: 100%;
+    padding-right: 2px;
+}
+.left .left-container .features {
+    display: grid;
+    grid-template-columns: auto;
+}
 }

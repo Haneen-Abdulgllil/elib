@@ -16,7 +16,7 @@ body{
 }
 .container-cart .head{
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
 }
 .container-cart .head i{
     font-size: 25px;
